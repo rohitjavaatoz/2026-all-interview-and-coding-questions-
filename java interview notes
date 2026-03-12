@@ -1,3 +1,60 @@
+InstanceOf :->
+The instanceof operator in Java is used to check whether an object is an instance of a particular class or not.
+
+valueOf :->The java string valueOf() method converts different types of values into string. By the help of string valueOf() 
+           method, you can convert int to string, long to string, boolean to string, character to string, float to string,
+           double to string, object to string and char array to string.
+
+ArrayStoreException :->you can store only string elements in an array of strings. if you try to insert integer element in an array of strings, 
+                       you will get ArrayStoreException at run time.
+
+Http status code
+200	Success	        The request has succeeded
+201	Created	        The request has been fulfilled and resulted in a new resource being created
+204	No Content	The request has fulfilled the request but does not need to return an entity body
+206	Partial Content	The server has fulfilled the partial GET request for the resource
+400	Bad request	The request could not be understood by the server due to malformed syntax
+404	Not Found	The server has not found anything matching the request URI
+405	Method Not allowed	The method specified in the request is not allowed for the resource identified by the request URI
+409	Conflict	The request could not be completed due to a conflict with the current state of resource
+
+Stream:->
+There are two basic types of stream defined by Java, called byte stream and character stream. 
+The byte stream classes provide a convenient means for handling input and output of bytes and 
+character streams provide a convenient means for handling input and output of characters, respectively.
+
+different type of sorting in java:-> 
+
+Bubble Sort
+Insertion Sort
+Selection Sort
+Merge Sort
+Heapsort
+Quicksort
+
+Sorting in Java: https://www.studytonight.com/data-structures/selection-sorting
+
+Divide and Conquer:
+                  
+In divide and conquer approach, the problem in hand, is divided into smaller sub-problems and then each problem is solved independently. 
+When we keep on dividing the subproblems into even smaller sub-problems, we may eventually reach a stage where no more division is possible.
+ Those "atomic" smallest possible sub-problem (fractions) are solved. The solution of all sub-problems is finally merged in order to obtain 
+the solution of an original problem.
+
+
+
+Difference between HashMap and HashTable:
+
+HASHMAP	HASHTABLE
+1) HashMap is non synchronized. It is not-thread safe and can’t be shared between many threads without proper synchronization code.	Hashtable is synchronized. It is thread-safe and can be shared with many threads.
+2) HashMap allows one null key and multiple null values.	Hashtable doesn’t allow any null key or value.
+3) HashMap is a new class introduced in JDK 1.2.	Hashtable is a legacy class.
+4) HashMap is fast.	Hashtable is slow.
+5) We can make the HashMap as synchronized by calling this code
+Map m = Collections.synchronizedMap(hashMap);	Hashtable is internally synchronized and can’t be unsynchronized.
+6) HashMap is traversed by Iterator.	Hashtable is traversed by Enumerator and Iterator.
+7) Iterator in HashMap is fail-fast.	Enumerator in Hashtable is not fail-fast.
+8) HashMap inherits AbstractMap class.	Hashtable inherits Dictionary class
 Common Data Structures every Programmer must know
 Array
 Linked List
