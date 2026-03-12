@@ -1,0 +1,885 @@
+Common Data Structures every Programmer must know
+Array
+Linked List
+Stack
+Queue
+Binary Tree
+Binary Search Tree
+Heap
+Hashing
+Graph
+Matrix
+Misc
+Advanced Data Structure
+
+Types Of Data Structures
+Primitive data structures
+Non-primitive data structures
+
+Primitive data structures ->Integers, Floating point numbers, Character constants, String constants and Pointers come under this category.
+Non-primitive data structures
+
+Non-primitive data structures -> 1.Linear Data Structures: 
+                                 2.Non Linear Data Structures:
+
+1.Linear Data Structures:           (i).static -> Array
+                                    (ii).dynamic -> linkList, stack, queue
+
+ 2.Non Linear Data Structures:      (i).tree
+                                    (ii).graph
+
+
+Algorithm-> An algorithm is a procedure having well defined steps for solving a particular problem. 
+The major categories of algorithms are given below:sorting, searching, deleting, inserting, updating
+
+The performance of algorithm is measured on the basis of following properties:Time complexity, Space complexity:
+
+Example: Design an algorithm to multiply the two numbers x and y and display the result in z.
+
+Step 1 START
+Step 2 declare three integers x, y & z
+Step 3 define values of x & y
+Step 4 multiply values of x & y
+Step 5 store the output of step 4 in z
+Step 6 print z
+Step 7 STOP
+. Alternatively the algorithm can be written as ?
+
+Step 1 START MULTIPLY
+Step 2 get values of x & y
+Step 3 z← x * y
+Step 4 display z
+Step 5 STOP
+
+Usually the time required by an algorithm comes under three types:
+
+Worst case: It defines the input for which the algorithm takes the huge time.
+
+Average case: It takes average time for the program execution.
+
+Best case: It defines the input for which the algorithm takes the lowest time.
+
+The commonly used asymptotic notations used for calculating the running time complexity of an algorithm is given below:
+
+Big oh Notation (Ο)
+Omega Notation (Ω)
+Theta Notation (θ)
+
+
+Linked List
+Linked List can be defined as collection of objects called nodes that are randomly stored in the memory.
+A node contains two fields i.e. data stored at that particular address and the pointer which contains the address of the next node in the memory.
+The last node of the list contains pointer to the null.
+
+
+                         
+    DS
+
+DS Array
+DS Array, 2D Array
+
+DS Linked List
+Linked List, Doubly Linked List, Circular Linked List, Circular Doubly List
+DS Stack
+DS Stack Array Implementation Linked List Implementation
+DS Queue
+DS Queue Array Representation Linked List RepresentationCircular Queue open link
+DS Tree
+DS TreeBinary TreeBinary Search TreeAVL TreeB TreeB+ Tree
+DS Graph
+DS Graph Graph Implementation, BFS AlgorithmDFS Algorithm Spanning Tree
+DS Searching
+Linear SearchBinary Search
+DS Sorting
+Bubble Sort Bucket Sort Comb Sort Counting Sort Heap Sort Insertion Sort Merge Sort Quick Sort 
+Radix Sort Selection Sort Shell Sort Bitonic Sort Cocktail Sort Cycle Sort Tim Sort 
+
+
+JAVA
+The meaning of platform-independent is that the java compiled code(byte code) can run on all operating systems.
+In case of C or C++ (language that are not platform independent), the compiler generates an
+.exe file which is OS dependent.compiled code is Machine language which is understandable only
+by the current OS.
+Java is platform-independent but JVM is platform dependent
+
+java concepts are divided in to 3 editions
+1. java ME (Micro Edition )-> Mobile Applications
+2. java Se (Standard Edition )-> Desktop and Window based applicatin
+3. Java EE (Enterprise Edition )-> Internet and Enterprise Application
+
+Frameworks are not part of java Se or java EE they are deveoped by third party
+Companies by using java EE technologies.
+Java Sc lnaguge cocepts
+datatypes, operators, contorol Statement 
+OOPS
+JVM Architecture
+Garbage colection
+String handling
+wrapper classes 
+exception hadling
+multithreading 
+IOStreams(File IO)
+Networking(Socket programming)
+collections framework
+regular expression
+reflection api
+annotations
+inner cllasses
+AWT, Swings, applet
+Working with jar 
+date, time and text format
+
+java's Sologan "Write Once, Run Anywhere(WORA)"
+
+Java Software divided into two types
+1. jdk (Java developemnt kit)
+2. jre (java run time enviroment)(java class library)(compiler+jvm)
+difference between jdk, jre and jvm (java virtual matchine
+Jdk, inside jdk-> jre, inseide jre->jvm
+
+The java software installed directory is called java_home
+
+1. Path -Used by OS to identify binary files
+2. Classpath -Used by Compiler and JVM to identify java liberary file
+"." operator is represent current wroking directory
+
+JVM executes only main method because it has mainn method's callinng statement. 
+it does not have user defined method's callling statment in its logic. it 
+executes user defined methods only if they are called from main method.
+
+We can create two main method in two different classes there is no compile time error 
+but we have to tell to jvm which class first is exicuting.
+
+-> Yes we can call main method explicitly in onother class
+   syntex: 
+          class MainMethod{
+                public static void main(String[] args) {
+                System.out.pringln("hello");
+	    }
+        }
+          class newa {
+	public static void main(String[] args) {
+		MainMethod.main(new String[0]);
+	}
+O/p: Hello
+
+--------------
+final  -> is a keyword used to create constant variable, method and class.
+finally-> is a keyword used to define a block of statmentto be executed
+          definitely for a try block.
+finalize->is a method used to define logic to be execued definitely 
+          before an object is destroyed.
+ 
+               ASCII - Binary Character Table
+Letter	ASCII Code	Binary	Letter	ASCII Code	Binary
+a	097	01100001	A	065	01000001
+b	098	01100010	B	066	01000010
+c	099	01100011	C	067	01000011
+d	100	01100100	D	068	01000100
+e	101	01100101	E	069	01000101
+f	102	01100110	F	070	01000110
+g	103	01100111	G	071	01000111
+h	104	01101000	H	072	01001000
+i	105	01101001	I	073	01001001
+j	106	01101010	J	074	01001010
+k	107	01101011	K	075	01001011
+l	108	01101100	L	076	01001100
+m	109	01101101	M	077	01001101
+n	110	01101110	N	078	01001110
+o	111	01101111	O	079	01001111
+p	112	01110000	P	080	01010000
+q	113	01110001	Q	081	01010001
+r	114	01110010	R	082	01010010
+s	115	01110011	S	083	01010011
+t	116	01110100	T	084	01010100
+u	117	01110101	U	085	01010101
+v	118	01110110	V	086	01010110
+w	119	01110111	W	087	01010111
+x	120	01111000	X	088	01011000
+y	121	01111001	Y	089	01011001
+z	122	01111010	Z	090	01011010
+
+Assci character set range is "0 too 255"
+'0','1',........'9'
+48,49,.......,57
+
+Wrapper Classes => the classes which are used to represent primitive 
+values as object are called wrapper classes.in java.lang package we have 8
+wrapper classes.
+ 
+Auto Boxing and Unboxing
+.converting primitive type to wrapper class object automatically is called Auto Boxing.
+.converting wrapper class object to prrimitive type automaticaly is called Auto unboxing.
+
+A.B example.==> Integer io = 50;==> internalloy- Integer io = Integer.valueOf(50);
+A.U example.==> int i = new Integer(50); ==> internally- int i = new Integer(50).intValue();
+
+Exception handling.
+Error-> error tyype exception are thrown due to the problem occurred in side jvm logic,
+    1. if there is no memory in Java Stack Area. 2. if there is no memory in Heep area
+
+
+Exception-> Exception type exception are thrown due to the problem occurred in java 
+             program logic execution,
+Two categories of exceptioons 
+    1. checked exceptions  -> Throwable, Exception, and its direct subclasses are called checked 
+       exceptions because if they are thrown by using "throw" keyword compiler checks their handling
+       and if they are not caught by using "try/catch" or not reported by using "throws" keyword,
+        compiler throws CE:"unreported exception must be caught or declared to be thrown".
+    2. Unchecked exceptions-> Error, RuntimeException and their subclasses are called unchecked 
+       exception becase these exceptions handling is not checked by compiler when they are thrown
+       by using throw keyword. it means these exception object catching or reporting is optional.
+
+Finally ->As per coding standards in finally block we should write resource releaseing 
+          logic(or)clean up code. resource releasing logic means unreferencing object 
+          those are created in try block. ex.. closign a JDBC connection inside finally block.
+
+throw keyword is used to throw exception manually. in most of the cases we use it from 
+throwing checked exceptions explicitly.
+throws keyword is used to report that raised exception to the caller. it is mandatory for 
+checked exceptions for reporting, if they are not hadled.
+
+Types of method 
+1.Based on static 
+a. static methods
+b. non-static methods
+
+2.based on return type
+a. void method
+b. non-void method
+
+3.Based on parameter 
+a. parameterized 
+b. non-parameterized 
+
+We can define 9 types of members in a single class
+static -    variable,blocks,methods,main method
+non-static -variable,blocks,methods,constructors
+
+JVM Architecture
+Method Area->all static variables
+Head Area->object of a class, non-static variables memory created in this area
+Java Stack Area->all java methods are executed. in this runtime jvm by default creates 
+                 two threads, (i).main thread (ii).garbage collector thread
+->main thread is responsible to execute java methods stats with main methods, also 
+  responsible to create object in head area if it finds "New" keyword in any method logic.
+->Garbage collector thread is responsible to destroy all unused object from head area.
+->for each method execution jvm creates separate block in main thread. technically this 
+  block is called stack frame. this stack frame is created when methods is called and is 
+destroyed after methods execution.
+Note:java operations are called "stack based operations (sequential)", because every method
+     is executed only in stack.
+
+ClassLoader subsystem
+classLoader is a class that is responsible to load calsses into jvm's method are
+we have basically three types of class loaders
+1. ApplicationClassLooader-> is responsible to load classes from application classpath,
+                              (current working directory). it basically uses classpath envirnment
+                               variable to locate the class's ".class" file
+2. ExtensionClassLoader-> is responsible to load cllass from extension classpath, 
+                           "%java_Home%\jre\lib\ext"
+3. BootStrapCllassLoader-> is responsible to load class from bootstrap Classpath 
+                            "java_home%\jre\lib\rt.jar. these classes are predefined classes.
+
+static and non static 
+
+Types of static members
+1. static variables
+2. static block
+3. static methods.
+4. Main method
+
+*static keyword is not alllowed inside blocks or methods
+*main method is public because it must be caled by jvm from outside of our package.
+*static insde method because it must be executed without object create.
+*main method calling statement is available in jvm software.
+*main method return type is void because if we return a value, it is sent to 
+ jvm which is useless. Hence main() method return type is void.
+*String[], in main method means to read command line arguments(value)
+ into java applicatioon from keyboard.
+*why string in main method because the value passing from keyboard is sent into 
+ java application as String type value.
+*Yes it is possible caling main mehtod explicitly
+Note:main() method should not be called from its own blockor from a method 
+that is calling from main(), it leads to exception java.lang.stackOverflowError.
+
+.current object membersare accessed using this keyword, and
+ argument object memebers are accessed usign parameter name.
+
+.we can place return type in constructor prototype will not lead to error , because compiler and jvm
+ consider it as method.
+
+.yes, we can declare constructor as private. All four accessiblility modifiers
+are alllowed to constructor. we should declare constructor as privatte for not
+to allow user to create object from outside of our class. basically we will 
+declare constructor as private to implement singleton design pattern
+
+.type of constructors
+java supports 3 types of constructors
+1. Default constructor
+2. No-argument | non-parameterized constructor
+3. parameterized constructor
+
+?Why compier give constructor is called default constructor.
+Becaue it obtain all its default properties from its class they are:
+1. its accessibility modifier is same as its class accessibility modifier
+2. its name is same as its class name
+3. it doew not have parameters and logic
+
+suepr calling a constructor super class constructro
+
+.in a class we can define multiple constructors, but every constructor must have different parameters type (or) parameters order. 
+So in a class we can define one no-arguemnt constructor + 'n' number of parameterized constructors.
+
+Defining mulltiple constructors with different paramter types | order | list
+is called constructor overloading.
+
+Type of Class
+1.interface
+2.Abstract class
+3.Concreate class
+4.final class
+5.enum
+
+1.interface-> fully unimplemented class. it contains only public static final variables and 
+              public abstract methods. Ex. interface Vehicle{
+                                                public void engine()
+                                               }
+2.Abstract class->partially implemented class . it contians both abstract methods, concreate methods including 
+  variables, blocks and constructors. Ex. abstract class Bus{
+                                                   }
+concreate class-> fully implemented class. it contains only concreate methods.
+
+Use of suepr keyworkd: the super is java keyword, used to access super class members and constructors from subclass
+members and constructors. it has two syntaxes they are:
+1. super() -is used to call super class constructors from subclass constructors
+2. super.  -is used to call super class variables and methods from subclass members and consturctors.
+
+"super." is used to access super class variables and method fromm subclass members or constructors. It is mandatory 
+to user "super." in accessing superclass members only if subclass has member withh suerp class name.
+
+Method Hiding, Overridig, and Overloading:
+>redefining super class static method in subclass with same prototype is called "method hiding".
+>redefining super class non-static method in subclass with same prototype is called "method overriding".
+ overridden method is always executed from the object whose object is stored in the referenced variable.
+>defining new method with the existed method name but with different parameters type | list | orer is called "method Overloading".
+
+Class-> a class is a specification or blue print or template of an object that defines what goes to make up  a 
+        particular sort of object.
+ -> a class defines the structure, state and behaviour (data & code )that will be shared by a set of objects.
+    Hence each object of a given class contains the structure, state and behaviour defined by the class.
+ 
+Object-> Object is the physical reality of a class. 
+        .An instance of a class is the other technical term of an object.  
+
+*static variables are given to store common properties.
+*non-static variables are given to store individual properties.
+
+OOPS principles 
+1. Encapsulation
+2. Inheritence
+3. Ploymorphism
+
+java also support Abstraction, it is supporting principle of oops 
+1. Encapsulation->The process of creating a class by hiding internal data from the ourside world; and 
+                  accessing it only through publicaly exxposed methods is known as data encapulatioon/data hiding.
+                                                          OR
+  The process oof defining a class by hiding its data from direct access from the outside class members; and 
+  providing its access only through publicaly accessibile setter and getter methods with proper validations and
+  authentications is called encapsulation..
+
+2. Inheritence->The process of creating a class to reuse exited class members using our class name or object is
+                 called inheritance. it can alsoo be defined as it is a process of obtaining one object property
+                 to another object.
+                                                           OR
+  As the name suggest, inheritance means to take somethign that is already made.
+  inheritance is the process of defining a class to obtain othher object members into our object to reuse or 
+  change that object members by using our class name or object as if they were defined in our class. The main
+  purpose of inheritance is to obtain an existed class type to new classes so that new class objects can be 
+  using with existed class referenced variable.
+ inheritance can be implemented in java using below two keywords:
+a.extends b. implements
+We have 5 types of inheritance
+(i). Single level (ii). Multi Level (iii). hierarchical (iv). hybrid (v). Multiple interfaces inheritance
+*java does not support multiple inheritance, but it provides alternative to support multiple inheritance 
+ with intefaces.
+
+3. Ploymorphism->it is a process of defining a class with multiple methods with same method name with different 
+                 implementations is called polymorphism.
+                                                  OR
+ having multiple forms/behaviors. Defining a methhod in multiple classes with the same name with different 
+ implementaion for exhibiting different behaviors of the object is called polymorphism.we can develop polymorphism
+ by using (a).method overriding (b).method overloading
+ Type of polymorphisms.java suppport two types of polymorphisms
+(a). compile-time polymorphism or static binding or Early binding
+(b). Run-time polymorphism or Dynamic binding or Late binding
+
+(a). compile-time polymorphism ->When a method is invoked, if its method definition which is bind at comilation 
+                                 time by compiler is only executed by jvm at runtime, then it is called comile-time
+                                polymorphism.
+ static methods, Overloaded methods and non-static methods which are not overridden in subclass are come under 
+ compile time polymorphism.
+(b). Run-time polymorphism->When a method is invoked, the method definition which is bind at compilation time is not
+                          executed at runtime, instedad if it is executed from the subclass based on the object stored
+                          in the referenced variable is called runtime polymorphism.
+ Only non-static overridden methods are come under run-time polymorphism. 
+Definition - the process of executing an invoked method from different subclasses based on the object stored in 
+           the referenced variable is callled runtime polymorphism.
+To develop runtime polymorphism we must invoke the method by using super class referenced variable. Then only we
+can store alll subclasses objects too execute that method from the targeted subclass.
+So runtime polymorphism is only implemented through 
+.upcasting -to store subclass obj.
+.Method overriding
+
+
+
+4.Abstraction->The process of defining a calss by providing necessary details to call object operation by hiding 
+or removing its implementaion details is called abstraction.
+                                             Array
+definition-> Array is a referenced data type used to creaate fixed number of multiple variable of same 
+type to store multiple values of similar type in continous memory locations with single variable name.
+
+
+Java.lang package => this packe is called default packeage, because jvm loads all classes of this package 
+automatically. So to use this package classes we no need write import statement.
+some important classes in object class.
+1. Object, class, String, StringBuffer,  StringBuilder, Wrapper classes(All primitive capital latter INTEGER,
+BYTE...), Throwable, Exception, Error, Thread, TheadGroup, System, Runtime, ClassLoader, Process, SecurityManager
+
+Object subClasses->Class, classloader, compiler, system, package, process, runtime, number, Math, String
+StringBuffer, StringBuilder, thread, theadGroup, Throwalbe, Void,Wrapper Clsses,Error, Exception,clonable,
+charSequence, comparable, Runable
+
+
+common functionalities of very class object?
+every object contains 11 common perations -list is give below
+1.comparing two object=>public boolean equals(Object obj)
+2.Retrieving hashcode ie. object identity- public native int hashCode()
+3.Retrieving object informatino in String formate for printin purpose-public String toString()
+4.Retriebing the runtime class object reference-public final native class getClass()
+5. clonign object-protected native Object clone() threows CloneNotSupportedException
+6. executiong object clean-up code/resources releasing code just before object is being destroyed
+   protected void finalize() throws Throwable
+7.8.9. Relaeasing Object lock and sednign hread to waiting state
+       public final void wait() throws interruptedException
+       public final native void wait(Long mills) throws interrupted Exception
+       public final void wait(Long mills, int nanos) throws interruptedException
+10.11. Notify about obbjject lock availablility to waiting theads 
+        public final native void notify()
+        public final native void notifvAll()
+
+We can override below five methods.
+1.equals 2.hashcode. 3.toStirng 4.clone 5.finalize
+
+So wa have two ways to compare objects either by
+1. Using == operator-It always compares objects with their references.
+2. Using equals methods-It compares objects based on its implementsation.
+
+Obj1.state->x=10,y=20     reference1=1010
+Obj2.state->x=10,y=20     reference2=2020
+The above two object e1 and e2 .are equal based on their state and 
+                               .are not equal based on their reference.
+(equal method compare object based on their data)
+==operator compare object's references, not state(values)(it return true,false)
+
+Hashcode is an identity of an object. it is used to differentiate one oject from another object.
+Every object has its own unique hashcode. As per javadocs difined "hashcode is typically implemented by 
+converting the internal address of the object into an integer number"
+"it is used by hashtable data structure to store, retrieve, revmore, and search the object in Set and Mpa
+collection objects.
+
+can two object have same hashCode
+.yes therei is a possiblility, it is depenidng on hashCode() method implementation:
+=jvm always gerenates different hashcode for objects because object always have different references.
+but developer overriding hashCode() method may gives same hashcode for multiplw objects because obecsts
+of same class can have same state.
+
+Clone()-->Cloning object means creatign duplicate copy with current object state is called objct cllongin 
+        To perform cloning we must call Object class clone() method.
+
+Clonable is a marker interface which is an empty interface. It proviides permission to execute cllone()
+method to clone the current object.
+
+When jvm is created in its java stacks area by default two threads are created with names.
+1. main- to execute java methods
+2. garbage collector -to destroy unreferenced objects
+
+Multithreading=> it is the process of creating multiple threads in java stack area for executing 
+multiple task concurrently to finish their execution in short time by using processer ideal time 
+effectively.
+
+In java we can create uer defined threads in two wauys 
+1. implementing Runnable interface 
+2. extening Thead class
+
+Thread priority
+Every thread created in jvm is assigned with a priority 
+1 is called minimum priority
+2 is called normal priority
+10 is called maximum priority
+
+threadGroup-> Every thread is created with a thread group. the default thread group name is "main" We 
+can also create user defiined thread group oname is "main" We can also create user defined thread 
+groups useing threaGroup class.
+
+Types of threads.
+Java alllows us to create two types of threads they are 
+1. Non-Demon threads
+2. Demon threads
+1->A thread that executes main logic of the project is called non-daemon thread.
+2->A thread that is running in background to provide services to non-daemon threads is callled daemon 
+threads. So we can say daemon threads are service threads.
+
+Controlling thrad execution
+Thread execution can be controlled in three ways 
+1.sleep-> pausing thread execution for a given period of time using sleep method
+2.join->pausing thread execution until other thread execution is completed using Join mehtod
+3.Executing ttreads sequentially using synchronized keyword-synchronization concept.
+
+difference between join and sleep
+.sleep method puses thread execution independent of other threads execution for the given period of 
+time completely.  it does not alloow thread to run until the given time is completed.
+.join mehtod pauses thead execution dependent on other thred's execution for the given period of time.
+it pauses thread execution only for the given period of time or if that other thread execution is 
+completed before the given time, current thread execution is resumed immediately even through given 
+paused time is not finished.
+
+Synchronization
+thre process of allowing multimple thread to modify an object in sequence is callled synchronization.
+
+in java synchronizationi is implemented by using synchronized keyword.
+Synchronized keyword is applied to methods and local blocks.
+
+Deadlock 
+Deadlock is a situation where if two thread are waitinig on each other to complete there execution.
+Deadlock is occurredd due to wrong usage of synchronized keyword. If first thread is calling a synchronized 
+mehtod by using a locked object of second thread, and second thread calling a synchronized method by
+using a locked object of first thread then deadlock is occure.
+
+Wait(). The functionality of wait() method is block the currently executing thread by releasign lock 
+on the current object fo the currently executing method. so that the other waiting threads can use this 
+current object to execute other dependent synchronized method..
+
+notify().the functionality of notify() mehtod is- notifying to waiting thread about the lock availability
+of the current object. Then the waiting thread is moved from "Wait" state to "wait for lock acuisition"
+state. Once the lock is obtained then that waiting thread is moved to Runnable state for its turn to execute.
+
+notifyAll(). notifyAll() method is also used for the same above purpose but if there are multiple waiting
+thead are available.
+
+What is the difference between sleep, join, wait
+sleep(100) blocks thread execution independent of other thread for 100 milliseconds 
+join(100) block thread execution by depenidn on either other thread till it is completed or till 100
+milliseconds completed, whichever coming first thread resume its execution immediately.
+wait(100)blocks thread execution by depending on either other thread till it is called notify() or till 
+100 milliseconds completed, whichever coming first thread resume its execution immediately.
+
+
+                                         String
+String, StringBuffer, StringBuilder
+All these three classes are final classes
+These three classes are also subclasses of java.io.serializable interface
+String class is a subclass of Comparable interface, but StringBuffer and StringBuilder are not.
+
+Strnig s1="rohit";
+String s2=s1;
+System.out.println(s1==s2);true
+
+String s1= new String("rohit");
+String s2=s1;
+System.out.println(s1==s2);true
+
+Serialization. Serialization is the process of converting objects into stream oof bytes and 
+sending them to underlying outputStream. Usinig Serializatioon we can store object state 
+permanently in a dastination, for example file or remote computer.
+Deserialization. Deserialization is the process of converting stream of bytes into original 
+object. Deserialization oepration is performed by readObject() of ObjectInputStrream.
+
+List of know predefined marker interfaces
+1. java.lang.Cloneable
+2. java.io.Serializable
+3. java.util.RandomAccess
+4. java.rmi.Remote
+5. javax.servlet.SingleThreadModel
+6. java.util.EventLister
+ 
+                                          Collection(Java.utill package)
+
+Collection is a java object that is used to group homogeneous and heterogeneous, duplicate and 
+unique objects without size limitation for carrying multiple objects at a time from one application to
+another application among multiple layers of MVC architecture as method argumets and teturn type.
+sun developed many collecino classes among thhem 15 are important they are
+All this are classes
+linkedList     hashSet              hashMap
+ArrayList      LinkedHashSet        LinkedHashMap
+Vector         TreeSet              TreeMap
+Stack                               hashtable
+priorityQueue                       properties
+
+We also have some helper classes 
+Collections         Scanner              Local             Date
+Arrays              StringTockenizer     ResourceBundle    Calandar
+Random                                                     GregorianCalendar
+
+java.util package contains serveral classes to group/colect homogeneous and heterogeneous 
+
+All array objects has below two problems
+1. it allows us to store only smae type of elements 
+2. it is fixed in size
+The first problem can be solved using javva.lang.Object[]. using Object[] array we can collect all types 
+of object. But the second problem cannot be solved automatically. We should develop below code to solve
+this problem.
+creating an array and after copying a old array to new array and that pointing old reference into new 
+referecne.but in this process is having a code redundency it takes more time to deveelope a code that's 
+why we are not using this process
+
+in java project collectin framework classes are used to store and transport object
+are of same adn different types withhout size limitaion.
+
+We can collect objects in 2 ways
+1. in array format -in this format object does not have identity
+2. in(key,value) pair format -in this format object has identity
+
+
+in java 1.0 version SUN only interoduced 2 classes to collect objects in above 
+formates, they are
+a. vector: it stores objects in array format
+b. Hashtable: it stores object in(key, value) pair formate
+
+we havae one more class called Stack, it is the subclass of Vector class. it is 
+used to stores objects and to retrieve them in last in fors out(LIFO) fashion.
+
+These two classes were created as thread-safe classes, means alll the mehtods in these two 
+classes are declared as synchronized. Hence for every method call on these two objects either
+for adding or removing elements, jvm locks and unlocks these two objects. so in single thread
+model application it leads to performance issue. in single thread model application execution
+is sequential so there is no data corruption, hence no need locking. To solve this perfomance issue 
+problem
+in java 1.2 version more number of collection classes are added alternate to vector nad hashtable
+ .ArrayList and HashMap respectively.
+java 1.0 version are called as legacy classes.
+from java 1.2 version all collectin are called as collection framework.
+
+collection fromework is divided into two hierarchies to store objects in array format and 
+(key, value) pair format, they are:
+1. Collection hierarchy 
+2. Map Hierarchy
+
+Collectino hierarchy classes collect object in array format.it is the root interface of all those classes..
+Map hierarchy classes coollect object in (key, value) pair format, it is the root interfae of all those classes.
+
+Collectin hierarchy
+Collectino hierarchy classes are divided into three categories -Set, List, and Queue.
+Using Collectioon hierarchy classes we can collect unique and duplicate objects in array format.
+Set=>is a unique collection, it does not allow duplicate elements. Set is the super interface 
+for all unique collection classes.
+List=>is a duplicate collection, it allows duplicate elements.List is the super interace for all  
+duplicate collection classes.
+
+Set does not store elements in indexed or sorted order, whereas List stores elements in indexed order
+but not in sorted ordeer.
+
+SortedSet is a sub interface of  set that stores elements in sorted order either in asceending or desending
+ordeer based on the object's natural sortnig order.
+
+NavigableSet is a sub interface of SortedSet. it is added in java6 to add more navigatioin method to sorted
+set. The methods are lower, floor, ceiling, and higher return elements respectively less than, less than
+or equal, greater than or equal, and greater than a given element, returning null if there is no such element.
+
+Queue is a root interface of all types of queues. Besides basic Collection operation, queues provide 
+additional insertion, extraction, and inspection operations. Queues typically, but do not necessarily, 
+order elements in a FIFO(first-in-first-out) manner. We can create different types of queues like
+1. Priority Ques, Which order elements according to a supplied comparator, or the elements' natural ordering,
+and 2. LIFO quies(or stack) which order the elements LIFO(last-in-ifrst-out).. in a 3.FIFO queue, all 
+new elements are inserted at the tail of the queue. other kinds of quies may use different placement
+rules. Every Queue implenentation mehtod specify its ordering properties.
+
+Iterrable and Iterator super class of collection
+Collection is divided into three part
+set, list, queue -> sub interface of collection 
+
+sortedSet, navigableSet is sub set of Set interface
+
+list dosen't have any interface
+
+Que is having a DQueue interace
+
+treeSet is sub class of naviableset
+
+list having three sub class
+ArrayList
+vactor and stack ,stack is subclass of vactor
+linkedlist 
+
+priorityQueue is subclass of priorityQueqe
+
+
+Map
+Map is having a tow sub interface
+sortedMap NavigableMap
+TreeMap sub class of NavigableMap 
+map is having direct subclass
+Hashmap, LinkedHashMap
+LinkedHashMap is Sub class of HashMap
+map is having direc subcllass 
+Hashtable, properties
+properties is subclass of HashTable
+
+in a map ,key should be unique and values can be duplicated.
+each(Key,value)is called an entry. in map by default enteries are not sorte.
+
+SortedMap is the sub interfcae of Map. it sorts entries based on keys natural sorting order.
+
+Different project scenarior- we choose above collection classes
+
+To collect objects in array format we choose Colllection hierarchy classes.
+
+To collect objects in (key, value) pair format we should choose Map hierarchy classes.
+
+To collect Unique elements we must choose Set implented classes.
+To Collect unique and/or duplicate elements in indexed order we must choose List implemented classes.
+To retrieve elements in fifo manner We choose Queue implented classes.
+
+To store heterogeneous unique elements with no order we must choose HashSet
+To store heterogeneous unique elements in insertion order we must choose linkedHashSet.
+To store elements in their natural sorting order we must choose TreeSet. TreeSet allows
+only Homogeneous comparable uniqqe elements.
+
+To store and retrieve duplicate elements in random access we must choose ArrayList Or Vector.
+These two classes functionality is same except, vector is thread-safe. So, in Single
+thread model Application we should choose ArrayList, in multithreading model application
+if list object is modifying concurrently we should choose Vector.
+
+The drawback or  arraylist and vector is "they give less performance if we perform insertioons and 
+deletion in middle", because for every insertion or new element, all remaining elements must be moved 
+right hand side, and for every element deletion, elements must be moved to left hand side. As shown in 
+the below diagram.
+
+To solve this performace issue we must choose linkedList. It gives high perfrmance in inserting or deleing elements in
+middle . it internally uses linked list data structore, so there will not be any data movements, insted we
+will have onlly changing linkes, and the indexes.
+
+TO store and retrieve elements in filo manner we should choose stack.
+
+To store unique entries, we must choose HashMap.
+To store unique entries in insertion order, we must choose LinkedHashMap.
+To store unique entries in sorted order, we must choose treeMap. It only allows homogeneous unique
+entries with Comparale type keys.
+HashTable and HashMap both work similar, the only difference is ShashTable is thread-sace.
+Properties class is used to store properties permanently.
+
+creating collection object using avialable constructor(15)
+isEmpty(), add(Object obj), addAll(Collection c), remove(Object obj), removieAll(Collection), clear(),
+contains(Object obj), containsAll(Collection c), retarinAll(Collection c), size(), iterator(), equals(Obbject obj)
+hashCode(), toArray(), toArray(Object[] obj).
+
+
+Set inteface methdo -15.
+Set interface have smae above 15 methods because its specific functionality -maintaing unique elements-
+is implemented with the same add(Obejct) method as explained above.
+
+
+SortedSet interface method -21
+in additioon to above 15 methods this interface has specific 6 methods based on sorting functionality, they are:
+comparator(), first(), last(), headSet(Object toElement), tailSet(Object from Element), subSet(Object To Element, Object from Element)
+
+List inteface methods-25
+in addition to collectioon inteface 15 methods list intefce has 10 more specific methods based in indexed order.
+
+Stack class constructors and methods
+the stack class represents a last-in-first-out(LIFO) stack of object.it extends class vector with firve 
+operations that allow a vector to be treated as a stack. the usual push and pop operation are provided, as
+welll as method to peak at the top item on the stack.
+Stack(),empty(),push(Object o), pop(), peek(), search(Object o)
+
+
+Three Type of cursor to retrieve elements from all types of collection objects
+We have three types of curser object for retrieving elements they are:
+1. Enumeration
+2. Iterator
+3. Listiterator
+All Above three are interfaces.The subclasses objects are returned vica
+factory methods. Tyese facory methods are also defined inside collection classes.
+to these factory methods must be called with collection object for whhich we want
+to retrieve elements.
+
+Those factory methods are
+1.to retrieve Enumeratioon object
+ elements()->this method is defined inside both vector and hashtable classes
+2.to retrieve iterator object
+iterator()->it is defined in Collection interface. so it can be called on all collection oobjects
+3.to retrieve ListIterator object
+listiterator()->This methods are defined in list interface. So these methods can be called only 
+List type collectioon objects.
+
+using above three cursor ojects we can perform
+1. checking is element available in the underlaying collection
+2. if element available retrieve that element reference.
+
+performing above two task these three cursor object must have minimum two methods
+1. for checking element available or not
+2. for returing the elemnent reference from collection and moving cursor to next location
+
+All above cusor objects cursor is initially pointint to before first location of the collecton.
+
+
+Enumerationi is a legacy interface defined in java 1.0 to retrieve elements from legacy collectiooin vecor
+and Hashtable. It has below two methods to retrieve elements:
+1. hashMoreElements() 2. nextElements()
+
+Iterator-> iterator is a collection framework interface defined in java 1.2 it is a cursor object used 
+to retrieve elements from all collectioon type objects list, set and queue including vector.
+it is an alterantive of enumeration object and replacement of "for" loop on collection objects.
+
+List object has index so we can retrieve elements by usig for loop 
+But how can we retrieve elements from set objects since they do not have index
+iterator is only the option we have to retrieve elements from set objects.
+Iterator interface provides below three method for retrieving elements from collectioon
+hasNext(),next(), remove()
+
+
+Difference between Comparable and comparator interafaces.
+Comparable and Compaarator both are interfaces. they are used to specify elemnts sorting 
+order in TreeSet and keys in TreeMap.
+The difference between these two interfaces
+Comparable used to specify natural sorting order of the object.
+Comparator is used to specify custom sorting order of the object.
+To specify the sorting order by developer these two interfaces have below methods
+Comparable method-> compareTo(Object o1)
+Comparator method-> compare(Object o1, Object o2)
+TreeSet internally uses Comparable intreface method compareTo() to compare and 
+sort objects.
+so we can only add comparable objects to Treeset
+Compiler allows to add non-comparable objects to treeSet becsuse add() method
+parmeter is Oject,but jvm throws ClassCastException.
+
+Map we can retrive value by passing key its associated.. So key should be unique, 
+but we can duplicate values.
+
+home work
+Casting, instanceOf operator(102), Auto Boxiing and Auto Unboxing, valueOf, xxxValue
+
+InstanceOf :->
+The instanceof operator in Java is used to check whether an object is an instance of a particular class or not.
+
+valueOf :->The java string valueOf() method converts different types of values into string. By the help of string valueOf() 
+           method, you can convert int to string, long to string, boolean to string, character to string, float to string,
+           double to string, object to string and char array to string.
+
+ArrayStoreException :->you can store only string elements in an array of strings. if you try to insert integer element in an array of strings, 
+                       you will get ArrayStoreException at run time.
+
+Http status code
+200	Success	        The request has succeeded
+201	Created	        The request has been fulfilled and resulted in a new resource being created
+204	No Content	The request has fulfilled the request but does not need to return an entity body
+206	Partial Content	The server has fulfilled the partial GET request for the resource
+400	Bad request	The request could not be understood by the server due to malformed syntax
+404	Not Found	The server has not found anything matching the request URI
+405	Method Not allowed	The method specified in the request is not allowed for the resource identified by the request URI
+409	Conflict	The request could not be completed due to a conflict with the current state of resource
+
+Stream:->
+There are two basic types of stream defined by Java, called byte stream and character stream. 
+The byte stream classes provide a convenient means for handling input and output of bytes and 
+character streams provide a convenient means for handling input and output of characters, respectively.
